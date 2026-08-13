@@ -14,6 +14,28 @@ body {
     margin-bottom: 2.5rem;
 }
 
+.mininav {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    position: sticky;
+    height: 150px;
+    top: 0px;
+    background: #78a8b2;
+    transition: .25s ease;
+}
+.mininav.sticky {
+    transition: .25s ease;
+    height: 115px;
+    top: 0px;
+    background: #78a8b2;
+}
+
+.mininav.sticky h2 {
+    transition: .25s ease;
+    display: none;
+}
+
 svg#hero_image {
     width: 70%;
 }
@@ -84,6 +106,16 @@ h3.star::before, h3.star::after {
     background-color: #548b96;
     padding: .5rem;
     margin: .5rem .5rem .5rem 0rem;
+}
+
+.plaque a {
+    color: #010f3c;
+    text-decoration: none;
+}
+
+.nav .plaque:hover {
+    background-color: #eeddbf;
+    transition: 0.25s ease;
 }
 
 .traits {

@@ -8,10 +8,10 @@ window.addEventListener("DOMContentLoaded", () => {
     
     const root = document.querySelector('#hero_image')
     root.addEventListener("mousemove", (e) => {
-        // Calculate horizontal movement since the last mouse position
+        // horizontal change
         deltaX = e.clientX - oldX;
 
-        // Calculate vertical movement since the last mouse position
+        // vertical change
         deltaY = e.clientY - oldY;
 
         // Update old coordinates with the current mouse position
@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
         el.addEventListener('mouseenter', () => {
             const image = el.querySelector('image');
             
-            if (gsap.isTweening(image)) return; // Optional debounce
+            if (gsap.isTweening(image)) return; // debounce
 
             gsap.fromTo(image, {
                 rotate: 0
@@ -38,4 +38,15 @@ window.addEventListener("DOMContentLoaded", () => {
             });
         });
     })
+
+    const nav = document.querySelector('.mininav');
+    const triggerHeight = 800; 
+
+    window.addEventListener('scroll', () => {
+    if (window.scrollY >= triggerHeight) {
+        nav.classList.add('sticky');
+    } else {
+        nav.classList.remove('sticky');
+    }
+    });
 })
