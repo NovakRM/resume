@@ -60,7 +60,7 @@ h3.star::before, h3.star::after {
 
 .sidebar.col-lg-4 {
     position: sticky;
-    height: 1200px;
+    height: 1000px;
     top: -100px;
 }
 
