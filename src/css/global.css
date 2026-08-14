@@ -19,14 +19,14 @@ body {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     position: sticky;
-    height: 150px;
+    height: 200px;
     top: 0px;
     background: #78a8b2;
     transition: .25s ease;
 }
 .mininav.sticky {
     transition: .25s ease;
-    height: 115px;
+    height: 150px;
     top: 0px;
     background: #78a8b2;
 }
