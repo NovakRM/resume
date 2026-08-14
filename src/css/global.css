@@ -167,14 +167,14 @@ h3.star::before, h3.star::after {
         padding: 1.75rem;
         padding-bottom: 0;
     }
-    /* h2.title {
-        font-size: 3rem;
-    } */
     .project img {
         margin-bottom: 1.25rem;
     }
     .project .col-lg-4.col-sm-12 {
         display: flex;
         justify-content: center;
+    }
+    .mininav {
+        height: auto;
     }
 }
